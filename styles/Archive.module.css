@@ -1,0 +1,216 @@
+.container {
+  min-height: calc(100vh - 52px);
+  margin-bottom: 3em;
+}
+
+.archivecontainer {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.fulllight {
+  background-color: #e2e8ec;
+  color: #07112f;
+}
+
+.fulldark {
+  background-color: #07112f;
+  color: #e2e8ec;
+}
+
+.titlecontainer {
+  padding: 3em 0;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 1.4em;
+}
+
+.about {
+  font-size: 0.8em;
+  font-weight: 200;
+}
+
+.project {
+  padding: 0.7em 0;
+  display: grid;
+  grid-template-columns: 15% 20% 50% 15%;
+  grid-column-gap: 0px;
+  align-items: center;
+}
+
+.project h1 {
+  width: 85%;
+}
+
+.labelcontainer {
+  display: grid;
+  grid-template-columns: 15% 20% 50% 15%;
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  align-items: center;
+  margin-bottom: 1em;
+}
+
+.techlabel,
+.categorylabel {
+  display: none;
+}
+
+.sprintcontainer,
+.bloomtechprojectcontainer,
+.apprenticeshipcontainer,
+.projectcontainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.link {
+  display: flex;
+}
+
+.sitedark,
+.sitelight {
+  margin-right: 0.4em;
+}
+
+.sitelight,
+.githublight {
+  color: #07112f;
+  transition: all 0.3s ease;
+}
+
+.sitedark,
+.githubdark {
+  color: #e2e8ec;
+  transition: all 0.3s ease;
+}
+
+.sitedark:hover,
+.githubdark:hover,
+.sitedark:active,
+.githubdark:active,
+.sitelight:hover,
+.githublight:hover,
+.sitelight:active,
+.githublight:active {
+  color: #24ff7c;
+}
+
+.category,
+.technologies {
+  display: none;
+}
+
+.technologies {
+  font-size: 0.8em;
+}
+
+.category {
+  width: 85%;
+}
+
+.date,
+.name,
+.category,
+.technologies {
+  font-weight: 300;
+}
+
+.arrowcontainer {
+  display: flex;
+  gap: 1em;
+}
+
+.backlight,
+.backdark,
+.forwardlight,
+.forwarddark {
+  border: 2px solid #e2e8ec3e;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.backlight,
+.forwardlight {
+  box-shadow: 4px 4px 8px #cbcbcb, -4px -4px 8px #ffffff;
+}
+
+.backlight:hover,
+.backlight:active,
+.backdark:hover,
+.backdark:active,
+.forwarddark:hover,
+.forwarddark:active,
+.forwardlight:hover,
+.forwardlight:active {
+  color: #24ff7c;
+}
+
+.image {
+  border-radius: 50%;
+}
+
+.headercontainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (min-width: 400px) {
+  .backdark,
+  .backlight,
+  .forwardlight,
+  .forwarddark {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media (min-width: 450px) {
+  .title {
+    font-size: 2em;
+  }
+
+  .about {
+    font-size: 1em;
+  }
+}
+
+@media (min-width: 800px) {
+  .archivecontainer {
+    width: 60%;
+  }
+
+  .techlabel,
+  .categorylabel {
+    display: flex;
+  }
+
+  .labelcontainer {
+    grid-template-columns: 5% 10% 25% 25% 20% 10%;
+    grid-column-gap: 1%;
+  }
+
+  .title {
+    font-size: 2.5em;
+  }
+
+  .project {
+    grid-template-columns: 5% 10% 25% 25% 20% 10%;
+    grid-column-gap: 1%;
+  }
+
+  .category,
+  .technologies {
+    display: flex;
+    flex-direction: column;
+  }
+}
